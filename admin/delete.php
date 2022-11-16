@@ -12,8 +12,8 @@ if (isset($_GET['user_id'])) {
 
      if ($result == TRUE) {
 
-        echo "Record deleted successfully.";
-        echo "<script>window.open('recycle-center.php');</script>";
+        
+        echo "<script>window.open('recycle-center.php','_self');</script>";
 
     }else{
 

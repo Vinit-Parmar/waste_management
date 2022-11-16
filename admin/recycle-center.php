@@ -1,22 +1,4 @@
-<?php 
-
-include "wms.php";
-
-$sql = "SELECT * FROM users";
-if (isset($_POST['submit'])) {
-   $fname = $_POST['fname'];
-   $mname = $_POST['mname'];
-   $lname = $_POST['lname'];
-   $uname = $_POST['uname'];
-   $pass = $_POST['pass'];
-   $area = $_POST['area'];
-   $sql1 = "INSERT INTO `users` VALUES (NULL,'$fname','$mname','$lname','$uname','$pass','$area')";
-$conn->query($sql1);
-}
-
-$result = $conn->query($sql);
-
-?>
+<?php include 'insert.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -325,7 +307,7 @@ $result = $conn->query($sql);
                   <!-- /.card-body -->
                   <div class="card-footer">
                      <a href="#" class="btn btn-cancel" data-dismiss="modal">Cancel</a>
-                     <button type="submit" class="btn btn-save">Save</button>
+                     <button name="submit" type="submit" class="btn btn-save">Save</button>
                   </div>
                </form>
             </div>
@@ -336,7 +318,7 @@ $result = $conn->query($sql);
       <div class="modal-dialog modal-dialog-centered modal-md">
          <div class="modal-content">
             <div class="modal-body text-center">
-               <form>
+               <form method="post">
                   <div class="card-body">
                      <div class="row">
                         <div class="col-md-12">
@@ -387,7 +369,7 @@ $result = $conn->query($sql);
                   <!-- /.card-body -->
                   <div class="card-footer">
                      <a href="#" class="btn btn-cancel" data-dismiss="modal">Cancel</a>
-                     <button type="submit" class="btn btn-save">Save</button>
+                     <button name="submit" type="submit" class="btn btn-save">Save</button>
                   </div>
                </form>
             </div>

@@ -24,8 +24,8 @@ include "wms.php";
 
         if ($result == TRUE) {
 
-            echo "Record updated successfully.";
-            echo "<script>window.open('recycle-center.php');</script>";
+            
+            echo "<script>window.open('recycle-center.php','_self');</script>";
 
         }else{
 
