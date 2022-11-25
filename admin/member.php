@@ -46,7 +46,7 @@
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" data-widget="fullscreen" href="../index.php">
+               <a class="nav-link" data-widget="fullscreen" href="../index1.php">
                   <i class="fas fa-sign-out-alt"></i>
                </a>
             </li>
@@ -54,7 +54,7 @@
       </nav>
       <aside class="main-sidebar sidebar-light-primary">
          <!-- Brand Logo -->
-         <a href="index.php" class="brand-link">
+         <a href="index1.php" class="brand-link">
       <img src="../asset/img/logo.png" alt="DSMS Logo" width="200">
       </a>
       <div class="sidebar">
@@ -62,7 +62,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                data-accordion="false">
                <li class="nav-item">
-                  <a href="index.php" class="nav-link">
+                  <a href="index1.php" class="nav-link">
                      <img src="../asset/img/dashboard.png" width="30">
                      <p>
                         Dashboard
