@@ -50,7 +50,7 @@
       </nav>
       <aside class="main-sidebar sidebar-light-primary">
          <!-- Brand Logo -->
-         <a href="index.php" class="brand-link">
+         <a href="index1.php" class="brand-link">
       <img src="../asset/img/logo.png" alt="DSMS Logo" width="200">
       </a>
       <div class="sidebar">
@@ -58,7 +58,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                data-accordion="false">
                <li class="nav-item">
-                  <a href="index.php" class="nav-link">
+                  <a href="index1.php" class="nav-link">
                      <img src="../asset/img/dashboard.png" width="30">
                      <p>
                         Dashboard
@@ -67,9 +67,9 @@
                </li>
                <li class="nav-item">
                   <a href="recycle-center.php" class="nav-link">
-                     <img src="../asset/img/recycle-center.png" width="30">
+                     <img src="../asset/img/member.png" width="30">
                      <p>
-                        Recycling Center
+                        Members
                      </p>
                   </a>
                </li>
@@ -81,7 +81,7 @@
                      </p>
                   </a>
                </li> -->
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                   <a href="member.php" class="nav-link">
                      <img src="../asset/img/member.png" width="30">
                      <p>
@@ -96,7 +96,7 @@
                         Collection Record
                      </p>
                   </a>
-               </li>
+               </li> -->
                <!-- <li class="nav-item">
                   <a href="#" class="nav-link">
                      <img src="../asset/img/report.png" width="30">
@@ -129,19 +129,19 @@
             <div class="container-fluid">
                <div class="row mb-2">
                   <div class="col-sm-6">
-                     <h1 class="m-0"><img src="../asset/img/recycle-center.png" width="40"> Recycling Center</h1>
+                     <h1 class="m-0"><img src="../asset/img/member.png" width="40">Members</h1>
                   </div>
                   <div class="col-sm-6">
                      <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Recycling Center</li>
+                        <li class="breadcrumb-item active">Members</li>
                      </ol>
                   </div>
-                  <a class="btn btn-sm elevation-4" href="#" data-toggle="modal" data-target="#add"
+                  <!-- <a class="btn btn-sm elevation-4" href="#" data-toggle="modal" data-target="#add"
                      style="margin-top: 20px;margin-left: 10px;background-color: rgb(86,181,42)"><i
                         class="fa fa-plus-square"></i>
-                     Add New</a>
-               </div>
+                     Add New</a> -->
+               </div>   
             </div>
          </div>
          <section class="content">
@@ -163,11 +163,8 @@
 
     <th>Last Name</th>
 
-    <th>Username</th>
-
-    <th>Password</th>
-
     <th>Area</th>
+
 
 </tr>
 
@@ -192,10 +189,6 @@
                 <td><?php echo $row['m_name']; ?></td>
 
                 <td><?php echo $row['l_name']; ?></td>
-
-                <td><?php echo $row['user_name']; ?></td>
-
-                <td><?php echo $row['pass']; ?></td>
 
                 <td><?php echo $row['area']; ?></td>
 
@@ -282,24 +275,24 @@
                                     <input name="lname" type="text" class="form-control" placeholder="Last Name">
                                  </div>
                               </div>
-                              <div class="col-md-12">
+                              <!-- <div class="col-md-12">
                                  <div class="form-group">
                                     <label class="float-left">Username</label>
                                     <input  name="uname" type="text" class="form-control" placeholder="Username">
                                  </div>
-                              </div>
-                              <div class="col-md-12">
+                              </div> -->
+                              <!-- <div class="col-md-12">
                                  <div class="form-group">
                                     <label class="float-left">Password</label>
                                     <input  name="pass" type="password" class="form-control" placeholder="Password">
                                  </div>   
-                              </div>
+                              </div>-->
                               <div class="col-md-12">
                                  <div class="form-group">
                                     <label class="float-left">Area</label>
                                     <input  name="area" type="text" class="form-control" placeholder="Area">
                                  </div>
-                              </div>
+                              </div> 
                            </div>
                         </div>
                      </div>
@@ -344,24 +337,24 @@
                                     <input name="lname" type="text" class="form-control" placeholder="Last Name">
                                  </div>
                               </div>
-                              <div class="col-md-12">
+                              <!-- <div class="col-md-12">
                                  <div class="form-group">
                                     <label class="float-left">Username</label>
                                     <input  name="uname" type="text" class="form-control" placeholder="Username">
                                  </div>
-                              </div>
-                              <div class="col-md-12">
+                              </div> -->
+                              <!-- <div class="col-md-12">
                                  <div class="form-group">
                                     <label class="float-left">Password</label>
                                     <input  name="pass" type="password" class="form-control" placeholder="Password">
                                  </div>
-                              </div>
+                              </div>-->
                               <div class="col-md-12">
                                  <div class="form-group">
                                     <label class="float-left">Area</label>
                                     <input  name="area" type="text" class="form-control" placeholder="Area">
                                  </div>
-                              </div>
+                              </div> 
                            </div>
                         </div>
                      </div>

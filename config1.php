@@ -4,23 +4,19 @@ $username='root';
 $password='';
 $database='wms';
 
-$invalid='';
-
 $conn=mysqli_connect($server,$username,$password,$database);
 if($conn->connect_error){
     die("Connection failed!".$conn->connect_error);
 }
 if(isset($_POST['submit'])){ //isset checks that whether if a connection is established or not
-    $reg_first_name=$_POST['reg_first_name'];
-    $reg_mid_name=$_POST['reg_mid_name'];
-    $reg_last_name=$_POST['reg_last_name'];
-    $user_name=$_POST['user_name'];
-    $pass=$_POST['pass'];
-    $area=$_POST['area'];
+    $nonbio_waste=$_POST['nonbio_waste'];
+    $bio_waste=$_POST['bio_waste'];
+    $t_date=$_POST['t_date'];
+   
 
     
     // $password=$_POST['password'];
-    $sql = "INSERT INTO `users`(`f_name`,`m_name`,`l_name`,`user_name`,`pass`,`area`) VALUES('$reg_first_name','$reg_mid_name','$reg_last_name','$user_name','$pass','$area')" ;
+    $sql = "INSERT INTO `waste_produced`(`nonbio_waste`,`bio_waste`,`transport_date`) VALUES('$nonbio_waste','$bio_waste','$t_date')" ;
     if(mysqli_query($conn, $sql)){
         header("location:/dbms/admin/index1.php");
     } else{
@@ -36,17 +32,10 @@ if(isset($_POST['Login'])){
     $result=mysqli_query($conn,$query);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     // if(mysqli_num_rows($result)==1){
-    $count = mysqli_num_rows($result);  
-        
-    if($count == 1){
-        echo "<h1><center> Login successful </center></h1>";
+    if($result){
         header("location:register.php");
-    }  
-    if($result){  
-        $invalid="<h5><center>Invalid Details</center></h5>";
-        
     } else{
-        $error='';
+        $error='<br><br>EmailId or Password is Incorrect';
     }
 }
 

@@ -41,6 +41,7 @@
                             </div>
                         </div>
                     </div>
+                    <div style="margin-bottom:30px;"><?php echo $invalid; ?></div>
                     <div class="row">
                         <div class="col-6">
                             <button name="Login" type="submit" class="btn btn-block" style="background-color: rgba(28,153,84);color: rgb(235,235,235)">Login</button>
